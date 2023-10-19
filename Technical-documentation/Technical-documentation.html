@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation</title>
+  </head>
+
+  <body>
+    <main id="main-doc">
+     <nav id="navbar">
+      <header id="header">Python Documentation</header>
+      <ul>
+       <li><a href="#Introduction" class="nav-link" >Introduction</a></li>
+       <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+       <li><a href="#Comments"  class="nav-link">Comments</a></li>
+       <li><a href="#Variables"  class="nav-link">Variables</a></li>
+       <li><a href="#Data_Types" class="nav-link">Data_Types</a></li>
+       <li><a href="#If_Else" class="nav-link">If_Else</a></li>
+       <li><a href="#For_Loop"  class="nav-link">For_Loop</a></li>
+     </ul>
+    </nav>
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p class="main_article"></p>
+      <p>What is Python?
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+It is used for:
+ - web development (server-side),
+ - software development,
+ - mathematics,
+ - system scripting.
+      <ul><li>What can Python do?
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.</li>
+       <li>Why Python?
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar to the English language.
+Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+       <li>Good to know：
+The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li></ul>
+     </p>
+    </section>
+
+    <section class="main-section" id="Syntax">
+     <header>Syntax</header>
+     <p>Python Syntax compared to other programming languages：Python was designed for readability, and has some similarities to the English language with influence from mathematics. Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+      <ul><li> As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:
+        <code>
+          <ul>print("Hello, World!")</ul>
+          <ul>Hello, World!</ul></code></li>
+      <li>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</li>
+        <code>C:\Users\Your Name>python myfile.py</code>
+        <li>Python indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+Python uses indentation to indicate a block of code.</li>
+      </ul>
+     </p>
+    </section >
+
+    <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <p>Comments can be used to explain Python code. Comments can be used to make the code more readable. Comments can be used to prevent execution when testing code.</p>
+      <p>Comments starts with a #, and Python will ignore them:</p>
+       <code><ul>#This is a comment</ul>
+       <ul>print("Hello, World!")</ul></code></p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+        <code>
+        <ul>x = 5</ul>
+        <ul>y = "John"</ul>
+        <ul>print(x)</ul>
+        <ul>print(y)</ul></code>
+      <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data_Types</header>
+      <p>Built-in Data Types</p>
+      <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things. Python has the following data types built-in by default, in these categories:</p>
+        <ul><li>Text Type:	str</li>
+        <li>nNumeric Types:	int, float, complex</li>
+        <li>Sequence Types:	list, tuple, range</li>
+        <li>Mapping Type:	dict</li>
+        <li>Set Types:	set, frozenset</li>
+        <li>Boolean Type:	bool</li>
+        <li>Binary Types:	bytes, bytearray, memoryview</li>
+        <li>None Type:	NoneType</li></ul>
+      </p>
+      <p>You can get the data type of any object by using the type() function:</p>
+       <code><ul>x = 5 </ul>
+       <ul>print(type(x))</ul></code>
+    </section>
+
+    <section class="main-section" id="If_Else">
+     <header>If_Else</header>
+      <p>Python supports the usual logical conditions from mathematics:</p>
+        <li>Equals: a == b</li>
+        <li>Not Equals: a != b</li>
+        <li>Less than: a < b</li>
+        <li>Less than or equal to: a <= b</li>
+        <li>Greater than: a > b</li>
+        <li>Greater than or equal to: a >= b</li>
+        </p>
+      <p>These conditions can be used in several ways, most commonly in "if statements" and loops. An "if statement" is written by using the if keyword.</p>
+      <p>If statement:</p>
+       <code>
+       <ul>a = 33</ul>
+       <ul>b = 200</ul>
+       <ul>if b > a:</ul>
+       <ul>print("b is greater than a")</ul></code>
+      <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+    </section>
+
+    <section class="main-section" id="For_Loop">
+     <header>For_Loop</header>
+     <p> A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+     <p>Print each fruit in a fruit list:</p>
+        <code>
+        <ul>fruits = ["apple", "banana", "cherry"]</ul>
+        <ul>for x in fruits:</ul>
+        <ul>print(x)</ul></code>
+     <p>The for loop does not require an indexing variable to set beforehand.</p>
+    </section>
+
+      <header> Reference</header>
+        <ul>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" class="referral-link"> W3 schools </a>.</ul>
+    </section>
+   </main>
+  </body>
+</html>
+
